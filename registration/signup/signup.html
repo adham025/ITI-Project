@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../register/registration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h2>Create Account</h2>
+        <a href="#">Home</a><span class="strong">.</span
+        ><span>Create Account</span>
+      </div>
+
+      <form method="POST">
+        <div>
+          <input
+            type="text"
+            name="fName"
+            placeholder="FIRST NAME"
+            id="firstName"
+          />
+          <span></span>
+        </div>
+        <div>
+          <input
+            type="text"
+            name="lName"
+            placeholder="LAST NAME"
+            id="lastName"
+          />
+          <span></span>
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="EMAIL" id="email" />
+          <span></span>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            placeholder="PASSWORD"
+            id="password"
+          />
+          <span></span>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="repassword"
+            placeholder="REPASSWORD"
+            id="repassword"
+          />
+          <span></span>
+        </div>
+
+        <div class="login_div">
+          <p>
+            If you have an account, please
+            <a href="/registration/login/login.html" class="login"
+              >Login Here</a
+            >
+          </p>
+        </div>
+
+        <button type="submit" id="registerBtn">Register</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="/registration/signup/signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+:root {
+  --main-color: #ffbd27;
+  --second-color: #333e48;
+  --accord-bg: #eeeeee9c;
+  --accord-color: #444;
+  --ques-color: #434343;
+  --ans-color: #4d4448;
+  --hover-color: #b5afaf40;
+  --primary-color: #041e42;
+  --secondary-color: #ffbd27;
+  --links-color: #187ddf;
+  --border-color: #d9dde3;
+  --section-color: #f7f8f9;
+  --text-color: #021523;
+  --lite-text-color: #808a91;
+  --tertiary-color: #ff8a65;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.titleStyle {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: var(--text-color);
+}
+
+#title {
+  margin-bottom: 50px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 3.5px;
+  background-color: var(--main-color);
+  transform: translateY(-2px);
+}
+
+.shippSty {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--text-color);
+  padding-bottom: 20px;
+}
+
+.ques {
+  color: var(--te);
+  font-size: 25px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.ans {
+  font-size: 20px;
+  color: var(--ans-color);
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+  justify-content: space-between;
+}
+
+.faqColumn {
+  width: 48%;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .faqColumn {
+    width: 100%;
+  }
+}
+
+.accordion {
+  background-color: var(--accord-bg);
+  color: var(--accord-color);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  font-size: 16px;
+  color: var(--ans-color);
+  margin-bottom: 10px;
+}
+
+.panel p{
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.icon {
+  text-align: center;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.icon:hover {
+  background-color: var(--main-color);
+} 

@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #041e42;
+  --secondary-color: #ffbd27;
+  --links-color: #187ddf;
+  --border-color: #d9dde3;
+  --section-color: #f7f8f9;
+  --text-color: #021523;
+  --lite-text-color: #808a91;
+  --tertiary-color: #ff8a65;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fake {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(223, 218, 218, 0.938);
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+footer .top-footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-image: url(../Footer/images/pattern-2.png  );
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+}
+
+.top-footer .box {
+  width: 32%;
+  padding: 10px;
+  height: 200px;
+}
+
+@media (max-width: 1170px) {
+  .top-footer .box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-footer .box {
+    width: 100%;
+  }
+}
+
+.top-footer h3 {
+  color: #ffffff;
+  padding-bottom: 15px;
+  font-size: 22px;
+  position: relative;
+}
+
+.top-footer h3::after {
+  position: absolute;
+  content: "";
+  background-color: var(--secondary-color);
+  height: 2px;
+  width: 70px;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+
+.top-footer .box img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.top-footer .box div {
+  margin-top: 20px;
+}
+
+footer .top-footer a {
+  display: flex;
+  color: #ffffff;
+  margin-bottom: 10px;
+  transition: .5s;
+}
+
+footer .top-footer a:hover {
+  color: var(--links-color);
+  transform: translateX(10px);
+}
+
+footer .bottom-footer {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer .bottom-footer img {
+  width: 100%;
+}
+
+footer .bottom-footer .copyrights p {
+  font-weight: 500;
+  color: #ffffff !important;
+}
+
+@media (max-width: 810px) {
+  footer .bottom-footer {
+    flex-direction: column;
+  }
+  footer .bottom-footer .copyrights p {
+    font-size: 15px;
+    padding: 5px 0;
+  }
+}
+
+/* scroll to top */
+
+
+/* Start to top Btn */
+
+.to-top {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: -40px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.show {
+  right: 10px;
+}

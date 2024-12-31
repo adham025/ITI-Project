@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+
+}
+
+/* body {
+  margin-left: 20px;
+} */
+/* .products{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+} */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parent {
+  display: flex;
+  gap: 30px;
+}
+
+.item {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.item .item-img {
+  width: 45%;
+}
+.item-img img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  transition: .5s;
+}
+
+.item-img img:hover {
+  transform: scale(1.2);
+}
+
+.item .item-content {
+  width: 50%;
+}
+
+.product-title {
+  font-size: 30px;
+}
+.product-description {
+  margin: 20px 0;
+  color: #7c7c7c;
+  line-height: 1.5;
+}
+.product-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circle-color {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.product-flex{
+    margin-bottom: 10px;
+}
+.item-img{
+    width: 80%;
+}
+.btns-end{
+    display: flex;
+    gap: 20px;
+}
+.btns-end button{
+    padding: 16px 30px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+    font-size: 15px;
+    border-radius: 50px;
+    letter-spacing: 1.1px;
+}
+.btns-end button i{
+    margin-right: 5px;
+}
+
+.greenQuantity{
+    color: #5CB85C;
+    font-weight: 600;
+}
+
+.btns-end button:first-child{
+    background-color: #041e42;
+    color: #FFF;
+    border: 1px solid #041e42;
+    transition: .3s ease-in-out;
+}
+.btns-end button:first-child:hover{
+    background-color: #fff;
+    color: #041e42;
+}
+
+.btns-end button:last-child{
+    background-color: transparent;
+    color: #041e42;
+    border: 1px solid #041e42;
+    transition: .3s ease-in-out;
+}
+.list li{
+    color: #7c7c7c;
+}
+.btns-end button:last-child:hover{
+    color: #FFF;
+    background: #041e42;
+}
+.stars{
+    margin: 10px 0;
+    font-size: 12px;
+}
+.stars i{
+    color: #FFC107;
+}
+.stars i:last-child{
+    color: #cccbcb;
+}
+
+.product-price{
+    margin: 20px 0;
+    color: #333E48;
+    font-size: 25px;
+    border-bottom: 1px solid #7c7c7c5a;
+    padding-bottom: 15px;
+}

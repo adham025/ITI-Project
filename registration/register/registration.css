@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --border-color: #e2e2e2;
+    --button-corner: 4px;
+    --placeholder-color: #af9ba3;
+    --input-color: #020815;
+    --main-bg: #007c85;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 100px auto;
+    width: 700px;
+    font-family: "Montserrat", serif;
+    text-align: center;
+}
+
+.container h2{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.title{
+    margin-bottom: 50px;
+}
+.title a{
+    color: #000;
+    display: inline-block;
+    margin-right: 10px;
+}
+.title span{
+    display: inline-block;
+    margin: 0 10px;
+}
+.title .strong{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.container input{
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid var(--border-color);
+    padding: 17px 20px;
+    border-radius: var(--button-corner);
+    color: var(--input-color);
+    outline: none;
+}
+
+.container input:hover{
+    border-color: var(--main-bg);
+}
+
+.container input:focus{
+    border-color: var(--main-bg);
+}
+
+form div{
+    margin-bottom: 10px;
+}
+.container input + span {
+    color: red;
+    text-align: left;
+    display: block;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+} 
+.container input::placeholder{
+    color: var(--placeholder-color);
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+}
+.login_div{
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0; 
+}
+.login_div p{
+    font-size: 14px;
+    color: #616060;
+}
+.login_div .login{
+    color: #6aa1da;
+    display: inline-block;
+}
+
+.container button{
+    width: 100%;
+    padding: 13px 0;
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--main-bg);
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    border-radius: var(--button-corner);
+    cursor: pointer;
+}
+
+/* -------------------- login ------------------------ */
+
+.signin_title{
+    text-align: left;
+    margin-top: 80px!important;
+}
+.signin_title h3{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.signin_title p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+

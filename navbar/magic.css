@@ -1,0 +1,400 @@
+:root {
+  --primary-color: #041e42;
+  --secondary-color: #ffbd27;
+  --links-color: #187ddf;
+  --border-color: #d9dde3;
+  --section-color: #f7f8f9;
+  --text-color: #021523;
+  --lite-text-color: #808a91;
+  --tertiary-color: #ff8a65;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header button {
+  cursor: pointer;
+  border: none;
+}
+
+header input {
+  border: none;
+  outline: none;
+}
+
+header input::placeholder {
+  color: var(--lite-text-color);
+}
+
+header .container-header {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  header .container-header {
+    /* width: 750px; */
+    width: 90%;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  header .container-header {
+    /* width: 970px; */
+    width: 90%;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  header .container-header {
+    /* width: 1170px; */
+    width: 90%;
+  }
+}
+
+/* Our Nice Features */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+
+/* Our Nice Features */
+
+/* Start Header */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.main .logo {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main .logo img {
+  width: 100%;
+  width: 150px;
+}
+
+.mobi-menu {
+  display: none;
+  width: 25%;
+}
+
+.mobi-menu button {
+  background-color: #ffffff;
+}
+
+@media (max-width: 1170px) {
+  .mobi-menu {
+    display: block;
+    width: 0;
+  }
+}
+
+.mobi-menu i {
+  font-size: 25px;
+}
+
+.search {
+  display: flex;
+  width: 45%;
+}
+
+.search input {
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 1170px) {
+  .search {
+    display: none;
+  }
+  .search input {
+    width: 100%;
+    border-top: none;
+    border-top-left-radius: 0px;
+  }
+}
+
+@media (min-width: 1171px) {
+  .search {
+    display: flex !important;
+  }
+}
+.search button {
+  padding: 10px 15px;
+  width: 80px;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 1170px) {
+  .search button {
+    border-top-right-radius: 0px;
+  }
+}
+
+.main .actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1170px) {
+  .main {
+    position: relative;
+  }
+  .search {
+    z-index: 999;
+    position: absolute;
+    bottom: -46px;
+    width: 100%;
+    left: 0;
+  }
+
+  .main .actions {
+    gap: 10px;
+    width: 25%;
+  }
+}
+
+.search-mob {
+  display: none;
+}
+
+.search-mob i {
+  font-size: 25px;
+}
+
+.search-mob button {
+  background-color: #ffffff;
+  width: 30px;
+}
+
+@media (max-width: 1170px) {
+  .search-mob {
+    display: block;
+  }
+}
+
+.actions .account a,
+.actions .wish-list a,
+.actions .cart a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  color: var(--text-color);
+}
+
+@media (max-width: 1170px) {
+  .actions .account a,
+  .actions .wish-list a,
+  .actions .cart a {
+    gap: 0px;
+  }
+}
+
+.actions .account p,
+.actions .cart p {
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  .actions .account p,
+  .actions .cart p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .actions .account p,
+  .actions .cart p {
+    display: none;
+  }
+}
+
+.actions .account i,
+.actions .wish-list i,
+.actions .cart i {
+  font-size: 25px;
+}
+
+.actions .account .span,
+.actions .wish-list .span,
+.actions .cart .span {
+  font-size: 14px;
+  color: var(--lite-text-color);
+  font-weight: 400;
+}
+
+.actions .cart,
+.actions .wish-list,
+.actions .account,
+.actions .search-mob {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.actions .cart .after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-color);
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  top: -5px;
+  left: 18px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.actions .wish-list .after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-color);
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  top: -5px;
+  left: 13px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+header nav {
+  transition: 0.3s;
+}
+
+header nav .close {
+  padding: 20px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header nav .close button {
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+header nav .close button:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+@media (max-width: 1170px) {
+  header nav .close {
+    display: flex;
+  }
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav ul li a {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+header nav ul li a:hover {
+  color: var(--links-color);
+  /* color: var(--secondary-color); */
+}
+
+@media (max-width: 1170px) {
+  header nav {
+    z-index: 999;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/* End Header */

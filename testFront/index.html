@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | MaaS</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link rel="stylesheet" href="/testFront/css/all.min.css" />
+    <!-- Our Master Css -->
+    <link rel="stylesheet" href="/testFront/css/maas.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container-header">
+        <div class="logo">
+          <div class="mob-menu">
+            <button id="mobile-Btn"><i class="fa-solid fa-bars"></i></button>
+          </div>
+
+          <h1><a href="/">MaaS</a></h1>
+        </div>
+
+        <div class="top-section">
+          <!-- <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button> -->
+
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search For Products..."
+              class="top-search"
+            />
+
+            <div class="cats-div">
+              <select name="" id="" class="top-cats">
+                <option value="laptops">Laptops & Mobile Phones</option>
+                <option value="electronics">Electronics</option>
+                <option value="accessories">Accessories</option>
+                <option value="perfumes">Perfumes</option>
+                <option value="clothes">Clothes</option>
+                <option value="kids">Kids</option>
+              </select>
+
+              <button class="search-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass" id="icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <div class="search-btn">
+            <button id="clickSearch">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="wish-icon">
+            <i class="fa-solid fa-heart"></i>
+            <div class="wish-count">0</div>
+          </div>
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart-count" id="cartCount">0</div>
+          </div>
+          <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Custom mobile search -->
+    <!-- <div class="container">
+    <div class="mobile-search" id="showSearch">
+      <input type="text" name="searchQuery" placeholder="Search For Products..." id="mobiSearch" class="mobi-search-input">
+      <button id="mobiClickSearch" class="mobi-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </div> -->
+
+    <!-- Start Nav -->
+    <nav id="mobile-menu">
+      <div class="container">
+        <ul class="nav-list">
+          <div class="close-section">
+            <p>Welcome!</p>
+            <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <li>
+            <a href="../home.html"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li>
+            <a href="../categories/headphones/headphones.html"
+              ><i class="fa-solid fa-headphones-simple"></i>Headphones</a
+            >
+          </li>
+          <li>
+            <a href="../categories/laptops/laptops.html"
+              ><i class="fa-solid fa-laptop"></i>Laptops</a
+            >
+          </li>
+          <li>
+            <a href="../categories/mobiles/mobiles.html"
+              ><i class="fa-solid fa-mobile-screen-button"></i>Mobiles</a
+            >
+          </li>
+          <li>
+            <a href="../categories/monitors/monitors.html"
+              ><i class="fa-solid fa-tv"></i>Monitors</a
+            >
+          </li>
+          <!-- <li><a href="#"><i class="fa-solid fa-paw"></i>Tert</a></li> -->
+          <li>
+            <a href="#"><i class="fa-solid fa-info"></i>About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-square-phone"></i>Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Start Nav -->
+
+    <!-- Contact Page -->
+
+    <div class="contact-hero">
+      <div class="container">
+        <div class="contact-head">
+          <h1>Contact Us</h1>
+          <p>We're here to help you find the perfect match for your needs.</p>
+        </div>
+
+        <div class="contact-body">
+          <div class="form-section">
+            <div class="head-form">
+              <h2 class="hero">Leave us a Message</h2>
+              <p>
+                We're here to answer any questions or concerns you may have.
+                Feel free to reach out.
+              </p>
+            </div>
+
+            <form action="" id="myForm">
+              <div class="f-name">
+                <label for="firstName">First Name <span>*</span></label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  class="firstName"
+                  required
+                />
+                <span></span>
+              </div>
+
+              <div class="l-name">
+                <label for="lastName">Last Name <span>*</span></label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  class="lastName"
+                  required
+                />
+                <span></span>
+              </div>
+
+              <div class="emails">
+                <label for="email">Email<span>*</span></label>
+                <input type="email" name="email" id="email" required />
+                <span></span>
+              </div>
+
+              <div class="messages">
+                <label for="textMessage">Your Message<span>*</span></label>
+                <textarea
+                  name="message"
+                  id="textMessage"
+                  class="send-msg-btn"
+                  required
+                ></textarea>
+                <span></span>
+              </div>
+
+              <button type="submit" id="submit" class="submit-btn">
+                Send Message
+              </button>
+              <span></span>
+              <!-- <button type="submit" id="submitButton">إرسال</button> -->
+              <!-- <input type="submit" value="Send Message"> -->
+            </form>
+          </div>
+
+          <div class="map-section">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.247972220909!2d31.152214899999997!3d29.0096478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145a25e6d62da0d3%3A0x2697971af768c6d5!2sCreativa%20IHUB-Bani%20Suef!5e0!3m2!1sar!2seg!4v1734778753108!5m2!1sar!2seg"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="address">
+              <h2 class="hero">Our Addresses</h2>
+
+              <div class="our-address">
+                <p>ITI, Beni-Suef, Egypt</p>
+                <p>Support(+800)856 800 604</p>
+                <p>
+                  Email:
+                  <a href="mailto:maas@electronics.com">MaaS@electronics.com</a>
+                </p>
+              </div>
+
+              <div class="hours">
+                <h2 class="hero">Opening Hours</h2>
+                <p>Monday to Friday: 9am-9pm</p>
+                <p>Saturday to Sunday: 9am-11pm</p>
+              </div>
+
+              <div class="careers">
+                <h2 class="hero">Careers</h2>
+                <p>
+                  If you’re interested in employment opportunities at MaaS,
+                  email us:
+                </p>
+                <p>
+                  <a href="mailto:maas@electronics.com">MaaS@electronics.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Page -->
+
+    <!-- Start last Section and Footer -->
+    <div class="last-section">
+      <div class="container">
+        <div class="medal">
+          <i class="fa-solid fa-medal"></i> Sign up to Newsletter
+        </div>
+
+        <p>...and receive <b>$20 coupon for first shopping</b></p>
+
+        <div class="down-form">
+          <input type="text" placeholder="Enter Your Email Address" />
+          <button class="search-btn" id="subsBtn">SignUp</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="grid">
+          <div class="logo-info">
+            <div class="foot-logo">
+              <h1>MaaS Store</h1>
+            </div>
+            <div class="support">
+              <i class="fa-solid fa-headset"></i>
+              (800) 8001-8588
+            </div>
+
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="foot-cats">
+            <h2>Find Fast..!</h2>
+            <ul>
+              <li>
+                <a
+                  href="../categories/headphones/headphones.html"
+                  class="foot-links"
+                  >HeadPhones
+                </a>
+              </li>
+              <li>
+                <a href="../categories/laptops/laptops.html" class="foot-links"
+                  >Laptops
+                </a>
+              </li>
+              <li>
+                <a href="../categories/mobiles/mobiles.html" class="foot-links"
+                  >Mobiles</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../categories/monitors/monitors.html"
+                  class="foot-links"
+                  >Monitors</a
+                >
+              </li>
+              <!-- <li><a href="#" class="foot-links">Kids</a></li> -->
+            </ul>
+          </div>
+
+          <div class="pages">
+            <h2>Our Pages</h2>
+            <ul>
+              <li><a href="#" class="foot-links">About</a></li>
+              <li><a href="#" class="foot-links">FAQ</a></li>
+              <li><a href="#" class="foot-links">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-pay">
+        <div class="container">
+          <div class="copyrights">
+            <p>Copyright Reserved 2024 &copy; Maas Store</p>
+          </div>
+          <div class="payments">
+            <img src="images/patment-icon1.webp" alt="payments" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Start To Top Btn -->
+      <div class="to-top" id="toTopBtn">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+    </footer>
+    <!-- End last Section and Footer -->
+    <script src="../testFront/js/maas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="stylesheet" href="../../loading/loading.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../loading/loading.css" />
+    <link rel="stylesheet" href="../navbar/magic.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Start Header -->
+    <header>
+      <div class="container-header">
+        <div class="main">
+          <div class="logo">
+            <div class="mobi-menu">
+              <button id="menuBtn">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+            </div>
+            <a href="/">
+              <img src="../navbar/images/logo-dark.webp" alt="logo"
+            /></a>
+          </div>
+
+          <div class="search" id="search">
+            <input
+              type="text"
+              name="search"
+              placeholder="Find Your Favorite Product..."
+              id="searchQuery"
+            />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="actions">
+            <div class="search-mob">
+              <button id="searchMobBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div class="account">
+              <a href="../profile/index.html">
+                <i class="fa-regular fa-user"></i>
+                <div class="signin">
+                  <a href="../registration/login/login.html" class="span sign-status">Sign In</a>
+                  <p class="usernameNav">Account</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="wish-list">
+              <a href="../wishlist/wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <div class="after wishlistCount">0</div>
+              </a>
+            </div>
+
+            <div class="cart">
+              <a href="../cart/cart.html">
+                <div class="after cartCount">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-info">
+                  <p class="span">Total</p>
+                  <p class="totalPriceNavbar">0.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav id="nav">
+          <div class="close">
+            <p>Welcome!</p>
+            <button id="closeBtn"><i class="fa-solid fa-times"></i></button>
+          </div>
+
+          <ul>
+            <li>
+              <a href="../home.html"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="../categories/mobiles/mobiles.html"
+                ><i class="fa-solid fa-mobile-screen-button"></i>Mobiles</a
+              >
+            </li>
+            <li>
+              <a href="../categories/laptops/laptops.html"
+                ><i class="fa-solid fa-laptop"></i>Laptops</a
+              >
+            </li>
+            <li>
+              <a href="../categories/monitors/monitors.html"
+                ><i class="fa-solid fa-tv"></i>Monitors</a
+              >
+            </li>
+            <li>
+              <a href="../categories/headphones/headphones.html"
+                ><i class="fa-solid fa-headphones-simple"></i>Headphones</a
+              >
+            </li>
+            <li>
+              <a href="../ContactUS/contact.html"
+                ><i class="fa-solid fa-phone"></i>Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="../AboutUS/aboutUS.html"
+                ><i class="fa-solid fa-info"></i>About Us</a
+              >
+            </li>
+            <li>
+              <a href="../FAQpage/FAQpage.html"
+                ><i class="fa-solid fa-question"></i>FAQ</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="container">
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="sidebar" id="sidebar">
+        <h2>Profile</h2>
+        <ul>
+          <li id="personal-info0" class="active try">
+            <span class="icon">📝</span> Information
+          </li>
+          <li class="try" id="securityy">
+            <span class="icon">🔐</span> Security
+          </li>
+          <li class="try" id="Orderss">
+            <span class="icon">📦</span> My Orders
+          </li>
+          <li class="try" id="Orderss">
+            <a class="logout" href="../categories/mobiles/mobiles.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div id="Orders" style="display: none" class="section">
+
+          <div class="products_box"></div>
+          <div class="products_item"></div>
+
+          
+          <div class="item">
+            <div>
+              <strong></strong>
+            </div>
+            <div class="img-product">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div id="security" style="display: none" class="section">
+          <form>
+            <!-- First Name and Last Name -->
+            <div class="form-group">
+              <div style="width: 100%">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Old Password"
+                  id="oldpassword"
+                />
+                <span></span>
+              </div>
+              <div style="width: 100%; display: block">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter your Password"
+                  id="password"
+                />
+                <span></span>
+              </div>
+              <div style="width: 100%">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="rePassword"
+                  id="repassword"
+                />
+                <span></span>
+              </div>
+            </div>
+
+            <!-- Save Button -->
+            <div class="form-group">
+              <button id="updatepass" type="button">Save</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="personal-info" class="section" style="display: block">
+          <form>
+            <!-- First Name and Last Name -->
+            <div class="form-group">
+              <div class="form-field" style="display: inline-block; width: 48%">
+                <label for="first-name">First Name</label>
+                <input
+                  required
+                  type="text"
+                  id="first-name"
+                  placeholder="Enter your first name"
+                />
+                <p id="FError" class="error">
+                  Title must be at least 6 characters.
+                </p>
+                <p id="FeError" class="error">this input is required</p>
+              </div>
+              <div class="form-field" style="display: inline-block; width: 48%">
+                <label for="last-name">Last Name</label>
+                <input
+                  required
+                  type="text"
+                  id="last-name"
+                  placeholder="Enter your last name"
+                />
+                <p id="LError" class="error">
+                  Title must be at least 6 characters.
+                </p>
+                <p id="LeError" class="error">this input is required</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <div class="form-field" style="width: 100%">
+                <label for="email">Email</label>
+                <input
+                  required
+                  readonly
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <p id="EmailError" class="error">this Email is invalid</p>
+                <p id="EmailEError" class="error">this input is required</p>
+              </div>
+            </div>
+
+            <!-- Phone and Date of Birth -->
+            <div class="form-group">
+              <div class="form-field" style="display: inline-block; width: 48%">
+                <label for="phone">Phone</label>
+                <input
+                  type="number"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+                <p id="PhoneError" class="error">
+                  this Number is invalid(Egyption Number only )
+                </p>
+                <p id="PEError" class="error">this input is required</p>
+              </div>
+              <div class="form-field" style="display: inline-block; width: 48%">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" />
+                <p id="date" class="error">You must be over 18 years old</p>
+              </div>
+            </div>
+
+            <!-- Save Button -->
+            <div class="form-group">
+              <button id="update" type="button">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="../totalPriceNavbar/totalPriceNavbar.js"
+    ></script>
+    <script type="module" src="../getUsername/username.js"></script>
+    <script src="../navbar/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../searchCode/searchCode.js"></script>
+    <script type="module" src="../cardCode/cardCode.js"></script>
+    <script type="module" src="../wishlistCode/wishlistCode.js"></script>
+    <script type="module" src="./scrript.js"></script>
+  </body>
+</html>

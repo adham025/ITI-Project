@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="loading/loading.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="categories/mobiles/style.css">
+    <link rel="stylesheet" href="navbar/magic.css">
+    <link rel="stylesheet" href="home/main.css" />
+  </head>
+  <body>
+
+    <div class="overlay">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Start Header -->
+    <header>
+      <div class="container-header">
+        <div class="main">
+          <div class="logo">
+            <div class="mobi-menu">
+              <button id="menuBtn">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+            </div>
+            <a href="/">
+              <img src="../../navbar/images/logo-dark.webp" alt="logo"
+            /></a>
+          </div>
+
+          <div class="search" id="search">
+            <input
+              type="text"
+              name="search"
+              placeholder="Find Your Favorite Product..."
+              id="searchQuery"
+            />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="actions">
+            <div class="search-mob">
+              <button id="searchMobBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div class="account">
+              <a href="../../profile/index.html">
+                <i class="fa-regular fa-user"></i>
+                <div class="signin">
+                  <a href="../../registration/login/login.html" class="span sign-status">Sign In</a>
+                  <p class="usernameNav">Account</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="wish-list">
+              <a href="../../wishlist/wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <div class="after wishlistCount">0</div>
+              </a>
+            </div>
+
+            <div class="cart">
+              <a href="../../cart/cart.html">
+                <div class="after cartCount">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-info">
+                  <p class="span">Total</p>
+                  <p class="totalPriceNavbar">0.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav id="nav">
+          <div class="close">
+            <p>Welcome!</p>
+            <button id="closeBtn"><i class="fa-solid fa-times"></i></button>
+          </div>
+
+          <ul>
+            <li>
+              <a href="home.html"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="categories/mobiles/mobiles.html"
+                ><i class="fa-solid fa-mobile-screen-button"></i>Mobiles</a
+              >
+            </li>
+            <li>
+              <a href="categories/laptops/laptops.html"
+                ><i class="fa-solid fa-laptop"></i>Laptops</a
+              >
+            </li>
+            <li>
+              <a href="categories/monitors/monitors.html"
+                ><i class="fa-solid fa-tv"></i>Monitors</a
+              >
+            </li>
+            <li>
+              <a href="categories/headphones/headphones.html"
+                ><i class="fa-solid fa-headphones-simple"></i>Headphones</a
+              >
+            </li>
+            <li>
+              <a href="ContactUS/contact.html"><i class="fa-solid fa-phone"></i>Contact Us</a>
+            </li>
+            <li>
+              <a href="AboutUS/aboutUS.html"><i class="fa-solid fa-info"></i>About Us</a>
+            </li>
+            <li>
+              <a href="FAQpage/FAQpage.html"><i class="fa-solid fa-question"></i>FAQ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="bg-flex">
+      <div class="one">
+        <img src="home/imgs/7-3.png" alt="">
+      </div>
+      <div class="two">
+        <img src="home/imgs/slider-1600-600-5.png" alt="">
+        <div class="content">
+          <h3>HARMAN CARDON SL2300
+          </h3>
+          <section>
+            Headphones are a type of audio equipment that are worn on or over the ears to listen to music, podcasts, audiobooks, and other forms of audio content privately.
+          </section>
+          <a href="categories/headphones/headphones.html">Shop Now</a>
+        </div>
+      </div>
+      <div class="three">
+        <img src="home/imgs/3-44.png" alt="">
+      </div>
+    </div>
+        
+
+    <div class="boxer-flex">
+      <div class="box-item">
+        <img src="home/imgs/electronics/electronics (1).png" alt="">
+        <div class="text">
+          <span>Catch Big</span>
+          <div>
+            <strong>Deals</strong> on the camera
+          </div>
+          <a href="categories/monitors/monitors.html">Shop Now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="box-item">
+        <img src="home/imgs/electronics/electronics (27).webp" alt="">
+        <div class="text">
+          <span>Catch Big</span>
+          <div>
+            <strong>Deals</strong> on the camera
+          </div>
+          <a href="categories/laptops/laptops.html">Shop Now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="box-item">
+        <img src="home/imgs/electronics/electronics (11).png" alt="">
+        <div class="text">
+          <span>Catch Big</span>
+          <div>
+            <strong>Deals</strong> on the camera
+          </div>
+          <a href="categories/mobiles/mobiles.html">Shop Now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="box-item">
+        <img src="home/imgs/electronics/laptop2.webp" alt="">
+        <div class="text">
+          <span>Catch Big</span>
+          <div>
+            <strong>Deals</strong> on the camera
+          </div>
+          <a href="categories/headphones/headphones.html">Shop Now <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="parent-flex">
+      <div class="left">
+          <h2>Special Offer</h2>
+          <div class="left-item">
+            <div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/e-commerce-552db.appspot.com/o/images%2Fimg16.webp?alt=media&token=b7d1cba1-25fa-4a4e-a634-d0dacf685ff3" alt="">
+              
+              <article>Electronics</article>
+              <section>GameConsole Destiny</section>
+              <p>Headphones are a type of audio equipment</p>
+            </div>
+            <div class="topper">
+              <img src="home/imgs/electronics/footer-widget-img-01.webp" alt="">
+            </div>
+            <div class="topper">
+              <img src="home/imgs/home-banner.webp" alt="">
+            </div>
+          </div>
+      </div>
+
+      <div class="right-item">
+        <h2>Deals of Electronics</h2>
+
+        <div class="product-area"></div>
+
+        
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <div class="box">
+            <h3>Best Choice!</h3>
+
+            <div class="foot-logo">
+              <img src="Footer/images/logo-dark.webp" alt="logo" />
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>Our Categories</h3>
+            <div>
+              <ul>
+                <li><a href="categories/mobiles/mobiles.html">Mobiles</a></li>
+                <li><a href="categories/laptops/laptops.html">Laptops</a></li>
+                <li><a href="categories/monitors/monitors.html">Monitors</a></li>
+                <li><a href="categories/headphones/headphones.html">Headphones</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>Let Us Help You</h3>
+            <div>
+              <ul>
+                <li><a href="AboutUS/aboutUS.html">About US</a></li>
+                <li><a href="ContactUS/contact.html">Contact US</a></li>
+                <li><a href="FAQpage/FAQpage.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyrights">
+            <p>Copyright Resrved 2024 © Maas Store</p>
+          </div>
+
+          <div class="img">
+            <img src="Footer/images/payment.webp" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="to-top" id="toTopBtn">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+    </footer>
+
+<!-- 
+    <div class="second_section container_section mb-5 mt-5">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-2">
+          <div
+            class="d-flex justify-content-md-between justify-content-around p-3 align-items-center product_item"
+          >
+            <div>
+              <img src="imgs/electronics/electronics (1).png" alt="" />
+            </div>
+            <div>
+              <section>
+                Catch Big <br />
+                <strong>Deals</strong> on the camera
+              </section>
+              <a href="pages/Electronics.html?data=ElectronicsSection"
+                >Shop Now
+                <span class="text-center"
+                  ><i class="fa-solid fa-angle-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-2">
+          <div
+            class="d-flex justify-content-md-between justify-content-around p-3 align-items-center product_item"
+          >
+            <div>
+              <img src="imgs/electronics/electronics (27).webp" alt="" />
+            </div>
+            <div>
+              <section>
+                Shop The <br />
+                <strong>Hottest</strong> Products
+              </section>
+              <a href="pages/Electronics.html?data=ElectronicsSection"
+                >Shop Now
+                <span class="text-center"
+                  ><i class="fa-solid fa-angle-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-2">
+          <div
+            class="d-flex justify-content-md-between justify-content-around p-3 align-items-center product_item"
+          >
+            <div>
+              <img src="imgs/electronics/electronics (11).png" alt="" />
+            </div>
+            <div>
+              <section>
+                Catch Big <br />
+                Deals on the camera
+              </section>
+              <a href="pages/Electronics.html?data=ElectronicsSection"
+                >Shop Now
+                <span class="text-center"
+                  ><i class="fa-solid fa-angle-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-2">
+          <div
+            class="d-flex justify-content-md-between justify-content-around p-3 align-items-center product_item"
+          >
+            <div>
+              <img src="imgs/electronics/laptop2.webp" alt="" />
+            </div>
+            <div>
+              <section>
+                Catch Big <br />
+                Deals on the camera
+              </section>
+              <a href="pages/Electronics.html?data=ElectronicsSection"
+                >Shop Now
+                <span class="text-center"
+                  ><i class="fa-solid fa-angle-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="third_section my-5 container_section">
+      <div class="row">
+        <div class="col-md-3 col-sm-0 special_offer d-none d-md-block"></div>
+        <div class="col-md-9 col-12">
+          <h5 class="mb-3 pb-3 underTitle border-bottom">
+            Deals of Electronics
+          </h5>
+          <div
+            class="third_section_right d-flex justify-content-between flex-wrap"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fourth_section my-5 container_section">
+      <div class="row">
+        <div class="col-md-3 col-sm-0 special_offer2 d-none d-md-block"></div>
+        <div class="col-md-9 col-12">
+          <h5 class="mb-3 pb-3 underTitle border-bottom">Offers of phones</h5>
+          <div
+            class="fourth_section_right d-flex justify-content-between flex-wrap"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="staticImages container_section mb-5">
+      <div class="row">
+        <div class="col-sm-4 mb-2 d-none d-sm-block col-md-2">
+          <img src="imgs/themeforest1.webp" alt="" />
+        </div>
+        <div class="col-sm-4 mb-2 d-none d-sm-block col-md-2">
+          <img src="imgs/themeforest2.webp" alt="" />
+        </div>
+        <div class="col-sm-4 mb-2 d-none d-sm-block col-md-2">
+          <img src="imgs/themeforest2.webp" alt="" />
+        </div>
+        <div class="col-sm-4 mb-2 d-none d-sm-block col-md-2">
+          <img src="imgs/themeforest4.webp" alt="" />
+        </div>
+        <div class="col-sm-4 mb-2 d-none d-sm-block col-md-2">
+          <img src="imgs/themeforest5.webp" alt="" />
+        </div>
+        <div class="col-sm-4 mb-2 d-none d-sm-block col-md-2">
+          <img src="imgs/themeforest6.webp" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer"></footer> -->
+
+
+    <script
+      type="module"
+      src="totalPriceNavbar/totalPriceNavbar.js"
+    ></script>
+    <script type="module" src="getUsername/username.js"></script>
+    <!-- <script src="Footer/main.js"></script> -->
+    <script src="navbar/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script type="module" src="/categories/mobiles/mobiles.js" defer></script> -->
+    <script type="module" src="searchCode/searchCode.js"></script>
+    <script type="module" src="cardCode/cardCode.js"></script>
+    <script type="module" src="wishlistCode/wishlistCode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="home/home.js"></script>
+  </body>
+</html>

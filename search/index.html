@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/leonardo.png" />
+    <!-- Font fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Our Style CSS -->
+    <link rel="stylesheet" href="../Footer/footer.css" />
+    <link rel="stylesheet" href="../navbar/magic.css" />
+    <link rel="stylesheet" href="../productCss/productCss.css" />
+    <link rel="stylesheet" href="../loading/loading.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="loader"></div>
+    </div>
+    
+    <!-- Start Header -->
+    <header>
+      <div class="container-header">
+        <div class="main">
+          <div class="logo">
+            <div class="mobi-menu">
+              <button id="menuBtn">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+            </div>
+            <a href="/">
+              <img src="../../navbar/images/logo-dark.webp" alt="logo"
+            /></a>
+          </div>
+
+          <div class="search" id="search">
+            <input
+              type="text"
+              name="search"
+              placeholder="Find Your Favorite Product..."
+              id="searchQuery"
+            />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="actions">
+            <div class="search-mob">
+              <button id="searchMobBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div class="account">
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+                <div class="signin">
+                  <a href="../registration/login/login.html" class="span sign-status">Sign In</a>
+                  <p class="usernameNav">Account</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="wish-list">
+              <a href="../../wishlist/wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <div class="after wishlistCount">0</div>
+              </a>
+            </div>
+
+            <div class="cart">
+              <a href="../../cart/cart.html">
+                <div class="after cartCount">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-info">
+                  <p class="span">Total</p>
+                  <p class="totalPriceNavbar">0.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav id="nav">
+          <div class="close">
+            <p>Welcome!</p>
+            <button id="closeBtn"><i class="fa-solid fa-times"></i></button>
+          </div>
+
+          <ul>
+            <li>
+              <a href="../home.html"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="../categories/mobiles/mobiles.html"
+                ><i class="fa-solid fa-mobile-screen-button"></i>Mobiles</a
+              >
+            </li>
+            <li>
+              <a href="../categories/laptops/laptops.html"
+                ><i class="fa-solid fa-laptop"></i>Laptops</a
+              >
+            </li>
+            <li>
+              <a href="../categories/monitors/monitors.html"
+                ><i class="fa-solid fa-tv"></i>Monitors</a
+              >
+            </li>
+            <li>
+              <a href="../categories/headphones/headphones.html"
+                ><i class="fa-solid fa-headphones-simple"></i>Headphones</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-phone"></i>Contact Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-info"></i>About Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-question"></i>FAQ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start main Search -->
+    <div class="search-page">
+      <div class="container">
+        <div class="search-layout" id="searchLayout"></div>
+      </div>
+    </div>
+    <!-- End main Search -->
+
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <div class="box">
+            <h3>Best Choice!</h3>
+
+            <div class="foot-logo">
+              <img src="../../Footer/images/logo-dark.webp" alt="logo" />
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>Our Categories</h3>
+            <div>
+              <ul>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Monitors</a></li>
+                <li><a href="#">Headphones</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>Let Us Help You</h3>
+            <div>
+              <ul>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact US</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyrights">
+            <p>Copyright Resrved 2024 © Maas Store</p>
+          </div>
+
+          <div class="img">
+            <img src="../../Footer/images/payment.webp" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="to-top" id="toTopBtn">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="../totalPriceNavbar/totalPriceNavbar.js"
+    ></script>
+    <script type="module" src="../getUsername/username.js"></script>
+    <script src="../navbar/main.js"></script>
+    <script type="module" src="cartFun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="search.js"></script>
+    <script type="module" src="../cardCode/cardCode.js"></script>
+    <script type="module" src="../wishlistCode/wishlistCode.js"></script>
+  </body>
+</html>

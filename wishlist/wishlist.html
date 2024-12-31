@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../cart/cart.css" />
+    <link rel="stylesheet" href="../navbar/magic.css" />
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../loading/loading.css">
+    <link rel="stylesheet" href="wishlist.css">
+  </head>
+  <body>
+    
+    <div class="overlay">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Start Header -->
+    <header>
+      <div class="container-header">
+        <div class="main">
+          <div class="logo">
+            <div class="mobi-menu">
+              <button id="menuBtn">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+            </div>
+            <a href="/">
+              <img src="../../navbar/images/logo-dark.webp" alt="logo"
+            /></a>
+          </div>
+
+          <div class="search" id="search">
+            <input
+              type="text"
+              name="search"
+              placeholder="Find Your Favorite Product..."
+              id="searchQuery"
+            />
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="actions">
+            <div class="search-mob">
+              <button id="searchMobBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div class="account">
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+                <div class="signin">
+                  <a href="../registration/login/login.html" class="span sign-status">Sign In</a>
+                  <p class="usernameNav">Account</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="wish-list">
+              <a href="../../wishlist/wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <div class="after wishlistCount">0</div>
+              </a>
+            </div>
+
+            <div class="cart">
+              <a href="../../cart/cart.html">
+                <div class="after cartCount">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-info">
+                  <p class="span">Total</p>
+                  <p class="totalPriceNavbar">0.00 EGP</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav id="nav">
+          <div class="close">
+            <p>Welcome!</p>
+            <button id="closeBtn"><i class="fa-solid fa-times"></i></button>
+          </div>
+
+          <ul>
+            <li>
+              <a href="../home.html"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="../categories/mobiles/mobiles.html"
+                ><i class="fa-solid fa-mobile-screen-button"></i>Mobiles</a
+              >
+            </li>
+            <li>
+              <a href="../categories/laptops/laptops.html"><i class="fa-solid fa-laptop"></i>Laptops</a>
+            </li>
+            <li>
+              <a href="../categories/monitors/monitors.html"><i class="fa-solid fa-tv"></i>Monitors</a>
+            </li>
+            <li>
+              <a href="../categories/headphones/headphones.html"
+                ><i class="fa-solid fa-headphones-simple"></i>Headphones</a
+              >
+            </li>
+            <li>
+              <a href="../ContactUS/contact.html"><i class="fa-solid fa-phone"></i>Contact Us</a>
+            </li>
+            <li>
+              <a href="../AboutUS/aboutUS.html"><i class="fa-solid fa-info"></i>About Us</a>
+            </li>
+            <li>
+              <a href="../FAQpage/FAQpage.html"><i class="fa-solid fa-question"></i>FAQ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="wishlist-title">
+      <h2>My wishlist on Machic</h2>
+    </div>
+
+    <div class="container-wishlist">
+      <table class="table">
+        <thead class="head-line">
+          <tr>
+            <th></th>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Cart</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="cartEmpty">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M460 504H52c-24 0-44-20-44-44V138.4h496v320.8c0 24.8-20 44.8-44 44.8z"
+            fill="#ffbd27"
+          ></path>
+          <path
+            d="M52 472c-6.4 0-12-5.6-12-12V170.4h432v288.8c0 6.4-5.6 12-12 12H52v.8z"
+            fill="#fff"
+          ></path>
+          <path fill="#e1e6e9" d="M18.4 8h462.4v130.4H18.4z"></path>
+          <g fill="#fff">
+            <path
+              d="M504 138.4h-62.4v-64zM480.8 114.4V8l-39.2 66.4zM8 138.4h62.4v-64z"
+            ></path>
+            <path d="M18.4 8v120l52-53.6z"></path>
+          </g>
+          <g fill="#193651">
+            <path
+              d="M512 138.4c0-1.6-.8-4-2.4-5.6l-20.8-21.6V8c0-4.8-4-8-8-8H18.4c-4 0-8 4-8 8v116.8l-8 8.8c-1.6.8-2.4 3.2-2.4 4.8v320.8C0 488.8 23.2 512 52 512h407.2c28.8 0 52-23.2 52-52V138.4h.8zm-60-65.6l20.8-36v57.6L452 72.8zm20.8 44.8v12.8h-23.2V93.6l23.2 24zM467.2 16l-32 53.6c-.8.8-.8 3.2-.8 4v56.8h-356v-56c0-1.6-.8-3.2-1.6-4.8L35.2 16h432zM26.4 31.2l32.8 42.4L26.4 108V31.2zm36 62.4v36.8h-36l36-36.8zM496 460c0 20-16 36-36 36H52c-20 0-36-16-36-36V146.4h480V460z"
+            ></path>
+            <path
+              d="M372.8 429.6h16v16h-16zM428.8 429.6h16v16h-16zM67.2 429.6h16v16h-16zM123.2 429.6h16v16h-16zM140.8 264.8c5.6 89.6 55.2 160 115.2 160s108.8-70.4 115.2-160c5.6-2.4 9.6-8.8 9.6-15.2 0-9.6-8-17.6-17.6-17.6s-17.6 8-17.6 17.6c0 6.4 3.2 12 8.8 15.2-5.6 81.6-48 144.8-99.2 144.8s-93.6-63.2-99.2-144.8c4.8-3.2 8.8-8.8 8.8-15.2 0-9.6-8-17.6-17.6-17.6s-17.6 8-17.6 17.6c1.6 6.4 5.6 12 11.2 15.2z"
+            ></path>
+          </g>
+        </svg>
+
+        <h3>Your Wishlist is currently empty.</h3>
+        <a href="../categories/mobiles/mobiles.html">Return to shop</a>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <div class="box">
+            <h3>Best Choice!</h3>
+
+            <div class="foot-logo">
+              <img src="../../Footer/images/logo-dark.webp" alt="logo" />
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>Our Categories</h3>
+            <div>
+              <ul>
+                <li><a href="../categories/mobiles/mobiles.html">Mobiles</a></li>
+                <li><a href="../categories/laptops/laptops.html">Laptops</a></li>
+                <li><a href="../categories/monitors/monitors.html">Monitors</a></li>
+                <li><a href="../categories/headphones/headphones.html">Headphones</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>Let Us Help You</h3>
+            <div>
+              <ul>
+                <li><a href="../AboutUS/aboutUS.html">About US</a></li>
+                <li><a href="../ContactUS/contact.html">Contact US</a></li>
+                <li><a href="../FAQpage/FAQpage.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyrights">
+            <p>Copyright Reserved 2024 © Maas Store</p>
+          </div>
+
+          <div class="img">
+            <img src="../../Footer/images/payment.webp" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="to-top" id="toTopBtn">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+    </footer>
+
+    <script type="module" src="../getUsername/username.js"></script>
+    <script type="module" src="../totalPriceNavbar/totalPriceNavbar.js"></script>
+    <script type="module" src="wishlistFun.js"></script>
+    <script type="module" src="../wishlistCode/wishlistCode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../cardCode/cardCode.js"></script>
+    <script type="module" src="wishlist.js"></script>
+  </body>
+</html>

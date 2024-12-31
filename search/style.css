@@ -1,0 +1,27 @@
+
+.search-layout{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+}
+.search-layout img{
+  width: 100%;
+}
+
+@media(max-width: 768px){
+  .search-layout{
+    grid-template-columns: repeat(3, 33%);
+  }
+}
+
+@media(max-width: 576px){
+  .search-layout{
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media(max-width: 400px){
+  .search-layout{
+    grid-template-columns: 100%;
+  }
+}
