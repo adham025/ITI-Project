@@ -4,7 +4,7 @@
 
 
 
-###### Sign-up form that validates user inputs effectively, ensuring data integrity and providing a seamless onboarding experience for new users.
+##### Sign-up form that validates user inputs effectively, ensuring data integrity and providing a seamless onboarding experience for new users.
 
 ![img 11](https://github.com/user-attachments/assets/9b3853a9-ccb3-453c-93f8-a6f2a3abb180)
 
