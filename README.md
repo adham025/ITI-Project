@@ -51,14 +51,16 @@
 
 ![img 4](https://github.com/user-attachments/assets/fda6b8e4-983f-40f8-9dda-e0d2fbb483ae)
 
+![img 2](https://github.com/user-attachments/assets/2c596cba-1640-4749-8b99-4a96f23eae49)
+
+
 ##### Order Management:
 ##### Approve or reject user orders efficiently, streamlining the order fulfillment process and maintaining inventory integrity.
 
-![img 2](https://github.com/user-attachments/assets/2c596cba-1640-4749-8b99-4a96f23eae49)
+![img 5](https://github.com/user-attachments/assets/94b6f924-b731-4145-b833-5e6f73ebc846)
 
 Coupon Management:
 Handle CRUD operations for discount coupons, enabling the creation, or deletion of promotional offers.
 
-![img 5](https://github.com/user-attachments/assets/94b6f924-b731-4145-b833-5e6f73ebc846)
-
+![img 6](https://github.com/user-attachments/assets/736f6645-c50c-4a72-8a42-ff7270e1e1d3)
 
