@@ -8,7 +8,7 @@
 
 ![img 11](https://github.com/user-attachments/assets/9b3853a9-ccb3-453c-93f8-a6f2a3abb180)
 
-##### Home page showcs a dynamic shuffle of products, allowing users to add items to their wishlist or cart for a tailored shopping experience.
+##### Home page shows a dynamic shuffle of products, allowing users to add items to their wishlist or cart for a tailored shopping experience.
 
 ![img 12](https://github.com/user-attachments/assets/2bac6f72-f706-4885-a7b9-348e0b069adb)
 
